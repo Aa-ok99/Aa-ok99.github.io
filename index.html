@@ -3,57 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aa-ok99 | AI Developer Portfolio</title>
+    <title>Aa-ok99 | AI & Automation Portfolio</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f9; }
-        header { background: #24292e; color: white; padding: 2rem; text-align: center; }
-        .container { max-width: 900px; margin: auto; padding: 20px; }
-        .project-card { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; padding: 20px; }
-        iframe { width: 100%; height: 500px; border: none; border-radius: 5px; margin-top: 15px; }
-        h2 { color: #0366d6; }
-        .skills { display: flex; gap: 10px; flex-wrap: wrap; }
-        .skill-tag { background: #e1ecf4; color: #39739d; padding: 5px 12px; border-radius: 15px; font-size: 0.9rem; }
+        :root {
+            --primary-color: #0366d6;
+            --bg-color: #f6f8fa;
+            --text-color: #24292e;
+            --card-bg: #ffffff;
+            --border-color: #e1e4e8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background: #24292e;
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .skills-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-tag {
+            background: #e1ecf4;
+            color: #39739d;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(57, 115, 157, 0.2);
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: #ffffff;
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-top: 1px solid var(--border-color);
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Aa-ok99 Portfolio</h1>
-    <p>Python Developer & AI Automation Specialist</p>
+    <p>Python Developer | AI & Automation Specialist</p>
 </header>
 
 <div class="container">
-    <section>
+    
+    <section id="about">
         <h2>About Me</h2>
-        <p>ยินดีต้อนรับสู่พื้นที่รวบรวมโปรเจค AI และ Automation ของผม ผมเชี่ยวชาญการใช้ Python ในการจัดการข้อมูลและสร้างเครื่องมืออำนวยความสะดวก</p>
-        <div class="skills">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Hugging Face</span>
-            <span class="skill-tag">AI Subtitles</span>
-            <span class="skill-tag">Google Colab</span>
-        </div>
-    </section>
-
-    <section>
-        <h2>Featured AI Projects</h2>
+        <p>ยินดีต้อนรับสู่พื้นที่รวมโปรเจค AI ของผม ผมชื่อ <b>Aa-ok99</b> ผมเน้นการสร้างเครื่องมืออัตโนมัติด้วย Python และการประมวลผลภาษา (NLP) เพื่อช่วยลดขั้นตอนการทำงานที่ซับซ้อน</p>
         
-        <div class="project-card">
-            <h3>AI Subtitle Generator</h3>
-            <p>ระบบสร้างซับไตเติ้ลอัตโนมัติที่เน้นความแม่นยำแบบ 1:1 (Raw Translation)</p>
-            <iframe src="https://huggingface.co/spaces/Aa-ok99/subtitle-demo/embed"></iframe>
-        </div>
-
-        <div class="project-card">
-            <h3>Smart Chatbot</h3>
-            <p>แชทบอทวิเคราะห์ข้อความและตอบคำถามผ่านภาษาธรรมชาติ</p>
-            <iframe src="https://huggingface.co/spaces/Aa-ok99/chatbot-demo/embed"></iframe>
-        </div>
+        <ul class="skills-list">
+            <li class="skill-tag">🐍 Python</li>
+            <li class="skill-tag">🤗 Hugging Face</li>
+            <li class="skill-tag">🤖 Transformers</li>
+            <li class="skill-tag">🎙️ Whisper AI</li>
+            <li class="skill-tag">📝 Summarization</li>
+        </ul>
     </section>
 
-    <footer>
-        <p align="center">© 2026 Aa-ok99 | <a href="https://github.com/Aa-ok99">GitHub Profile</a></p>
-    </footer>
+    <section id="projects">
+        <h2>My AI Tools</h2>
+
+        <div class="project-card">
+            <h3>📝 AI Text Summarizer</h3>
+            <p>เครื่องมือสรุปข้อความภาษาอังกฤษอัตโนมัติ โดยใช้โมเดล BART จาก Hugging Face ช่วยให้สรุปบทความยาวๆ ได้ในไม่กี่วินาที</p>
+            
+            <div class="iframe-container">
+                <iframe src="https://asok99-text-summarizer.hf.space"></iframe>
+            </div>
+        </div>
+
+        <p style="text-align: center; color: #666;">
+            <i>(กำลังพัฒนาโปรเจคใหม่ๆ เพิ่มเติม เร็วๆ นี้...)</i>
+        </p>
+    </section>
+
 </div>
+
+<footer>
+    <p>© 2026 Aa-ok99 | <a href="https://github.com/Aa-ok99" target="_blank">GitHub Profile</a></p>
+</footer>
 
 </body>
 </html>
